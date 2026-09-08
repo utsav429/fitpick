@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FITPICK — Smart Fitness Product Picks</title>
+<meta name="description" content="Simple comparisons and recommendations for creatine, gym accessories and fitness products.">
+<style>
+:root{--bg:#0b0d10;--card:#14181d;--card2:#101318;--text:#f5f7fa;--muted:#aab2bd;--line:#252b33;--accent:#b8ff3d}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;letter-spacing:1px}.logo span{color:var(--accent)}
+.links{display:flex;gap:25px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}
+.hero{padding:95px 0 75px;background:radial-gradient(circle at 75% 25%,#283118 0,transparent 32%)}
+.badge{display:inline-block;border:1px solid #39432a;color:var(--accent);border-radius:30px;padding:6px 12px;font-size:13px;font-weight:700}
+h1{font-size:clamp(44px,7vw,76px);line-height:1.02;max-width:780px;margin:22px 0 20px;letter-spacing:-2px}
+h2{font-size:34px;line-height:1.1;margin:0 0 12px}h3{margin:8px 0;font-size:20px}
+.lead{font-size:19px;color:var(--muted);max-width:680px}
+.btn{display:inline-block;background:var(--accent);color:#0b0d10;padding:12px 18px;border-radius:9px;font-weight:800;margin:20px 8px 0 0}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+section{padding:75px 0;border-top:1px solid var(--line)}
+.sub{color:var(--muted);max-width:650px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#414953}
+.icon{font-size:30px}.card p{color:var(--muted);font-size:14px}.smallbtn{display:inline-block;margin-top:10px;font-weight:800;color:var(--accent)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.product{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px}
+.tag{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.meta{color:var(--muted);font-size:14px}.price{font-size:13px;color:#89919c;margin-top:12px}
+.product .btn{width:100%;text-align:center}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.step strong{font-size:34px;color:var(--accent)}
+.disclosure{background:var(--card2);border:1px solid var(--line);border-radius:16px;padding:24px;color:var(--muted);font-size:14px}
+footer{padding:35px 0;color:var(--muted);border-top:1px solid var(--line);font-size:13px}
+footer a{margin-right:18px}
+@media(max-width:800px){.links{gap:10px;font-size:12px}.grid,.products,.steps{grid-template-columns:1fr 1fr}h1{font-size:48px}}
+@media(max-width:520px){.links a:nth-child(n+3){display:none}.grid,.products,.steps{grid-template-columns:1fr}.hero{padding-top:65px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap navin">
+    <a class="logo" href="#home">FIT<span>PICK</span></a>
+    <div class="links">
+      <a href="#home">Home</a><a href="#creatine">Creatine</a><a href="#essentials">Essentials</a><a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<main id="home">
+<section class="hero">
+<div class="wrap">
+  <span class="badge">FITNESS PRODUCTS • SIMPLE COMPARISONS</span>
+  <h1>Better fitness choices. Without the confusion.</h1>
+  <p class="lead">FITPICK helps you compare popular fitness products and find options worth checking before you buy.</p>
+  <a class="btn" href="#creatine">Explore Creatine</a>
+  <a class="btn alt" href="#essentials">Gym Essentials</a>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>What are you looking for?</h2>
+  <p class="sub">Start with a category and compare products based on useful information such as size, type, features and value.</p>
+  <div class="grid">
+    <a class="card" href="#creatine"><div class="icon">🥤</div><h3>Creatine</h3><p>Compare popular creatine monohydrate options.</p><span class="smallbtn">View picks →</span></a>
+    <a class="card" href="#essentials"><div class="icon">🎒</div><h3>Gym Accessories</h3><p>Shakers, bags, bottles and everyday gym gear.</p><span class="smallbtn">View picks →</span></a>
+    <a class="card" href="#essentials"><div class="icon">🏋️</div><h3>Equipment</h3><p>Useful training equipment for different routines.</p><span class="smallbtn">View picks →</span></a>
+    <a class="card" href="#essentials"><div class="icon">🏃</div><h3>Running</h3><p>Products for running and active training.</p><span class="smallbtn">View picks →</span></a>
+  </div>
+</div>
+</section>
+
+<section id="creatine">
+<div class="wrap">
+  <h2>Creatine picks</h2>
+  <p class="sub">A simple starting list. Product details and prices should be checked at the retailer before buying.</p>
+  <div class="products">
+    <article class="product">
+      <span class="tag">Budget option</span><h3>NAKPRO Creatine Monohydrate</h3>
+      <p class="meta">Unflavoured • 250g</p>
+      <p>Compare the current listing, seller, package size and price before purchasing.</p>
+      <p class="price">Affiliate link goes here</p>
+      <a class="btn" href="#" onclick="alert('Replace this button with your Amazon Associates link.');return false;">Check latest price →</a>
+    </article>
+    <article class="product">
+      <span class="tag">Popular choice</span><h3>MuscleBlaze Creatine</h3>
+      <p class="meta">Creatine Monohydrate • 250g</p>
+      <p>Check the current product details and compare value with other options.</p>
+      <p class="price">Affiliate link goes here</p>
+      <a class="btn" href="#" onclick="alert('Replace this button with your Amazon Associates link.');return false;">Check latest price →</a>
+    </article>
+    <article class="product">
+      <span class="tag">Value comparison</span><h3>AS-IT-IS Creatine</h3>
+      <p class="meta">Creatine Monohydrate • 250g</p>
+      <p>Compare package size, price per gram and seller information.</p>
+      <p class="price">Affiliate link goes here</p>
+      <a class="btn" href="#" onclick="alert('Replace this button with your Amazon Associates link.');return false;">Check latest price →</a>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="essentials">
+<div class="wrap">
+  <h2>Gym essentials</h2>
+  <p class="sub">More categories can be added as you start recommending products to people.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🥤</div><h3>Shakers</h3><p>Useful for mixing supplements and drinks.</p><span class="smallbtn">Coming soon</span></div>
+    <div class="card"><div class="icon">🎒</div><h3>Gym Bags</h3><p>Carry clothes, shoes, accessories and bottles.</p><span class="smallbtn">Coming soon</span></div>
+    <div class="card"><div class="icon">💧</div><h3>Water Bottles</h3><p>Practical options for everyday training.</p><span class="smallbtn">Coming soon</span></div>
+    <div class="card"><div class="icon">🏋️</div><h3>Resistance Bands</h3><p>Useful for warm-ups, mobility and home training.</p><span class="smallbtn">Coming soon</span></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <h2>How FITPICK works</h2>
+  <div class="steps">
+    <div class="card"><strong>01</strong><h3>Compare</h3><p>We organize useful product information in a simple format.</p></div>
+    <div class="card"><strong>02</strong><h3>Check</h3><p>You visit the retailer to see the current product, seller and price.</p></div>
+    <div class="card"><strong>03</strong><h3>Choose</h3><p>You decide whether the product is right for your needs.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+  <h2>About FITPICK</h2>
+  <p class="sub">FITPICK is a fitness product recommendation website designed to make online product comparisons easier.</p>
+  <p class="sub">The goal is simple: less confusion, useful comparisons and transparent recommendations.</p>
+  <div class="disclosure">
+    <strong style="color:#fff">Affiliate disclosure</strong><br><br>
+    Some links on FITPICK may be affiliate links. If you click an affiliate link and make a qualifying purchase, FITPICK may receive a commission at no additional cost to you. Prices and availability can change, so always verify the current information on the retailer's website before purchasing.
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+  <strong style="color:#fff">FITPICK</strong><br><br>
+  <a href="#home">Home</a><a href="#creatine">Creatine</a><a href="#essentials">Essentials</a><a href="#about">About</a>
+  <p>© 2026 FITPICK. Product information is provided for comparison purposes.</p>
+</div>
+</footer>
+</body>
+</html>
